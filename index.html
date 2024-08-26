@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolas Guarin Gaviria Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nicolas Guarin Gaviria</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nicolas Guarin Gaviria</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Nicolas Guarin Gaviria profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nicolas Guarin Gaviria</h1>
+        <p class="section__text__p2">Software Engineer and AI Support</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nicol%C3%A1s-guar%C3%ADn-gaviria-08a4091a1/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Nggerizo97/Nggerizo97'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/erizongg97?igsh=bzRuYXZ4em9kemo0'"
+          />
+          <img
+            src="./assets/youtube.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.youtube.com/@ggnicolas123'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Business Analyst</p>
+              <p>2+ years <br />Software Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Mechatronic Engineer Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+              <p>Hello! My name is Nicolas Guarin Gaviria, a versatile Mechatronics Engineer 
+                with over 3 years of experience in software development and data analysis. At Bancolombia. 
+                I wear two hats: Software Engineer and Business Analyst. I develop scalable, cloud-based 
+                microservices and extract data-driven insights to support strategic decision-making. 
+                I'm passionate about leveraging technology to solve complex problems and continuously learn 
+                to stay ahead in the industry.</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technology Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Business Analyst</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/powerbi.jpg"
+                  alt="Experience icon"
+                  class="icon icon-large"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/sql.png"
+                  alt="Experience icon"
+                  class="icon icon-large"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/excel.png"
+                  alt="Experience icon"
+                  class="icon icon-large"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon icon-large"
+                />
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon icon-large"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/aws.png"
+                  alt="Experience icon"
+                  class="icon icon-large"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/devops.png"
+                  alt="Experience icon"
+                  class="icon icon-large"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon icon-large"
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/algoritmogenetico2.gif"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Neuronal Network</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nggerizo97/neuronal-network-matlab-work'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Paginaecommers.gif"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-Commerce Web Page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nggerizo97/MyFirstWebAppImage'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/chatbot-data.gif"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ChatBot Data Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nggerizo97/Chat_analyst'"
+              >
+                Github
+              </button>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a href="https://www.credly.com/badges/aefdb276-9ab0-4b99-ae52-4f3828dce5f1/public_url" target="_blank">
+              <img
+                src="./assets/programa-cientifico-de-datos-nivel-basico.1.png"
+                alt="Certification 1"
+                class="icon img-large"
+              />
+              </a>
+              <a href="https://www.credly.com/badges/6fffafc8-63ab-4422-ad76-c64900cbb476/public_url" target="_blank">
+                <img
+                src="./assets/applied-data-science-with-python-level-2.png"
+                alt="Certification 1"
+                class="icon img-large"
+                />
+              </a>
+              <a href="https://www.credly.com/badges/f91e63e9-820e-4f56-878c-3142232eec06/linked_in?t=rkikvm" target="_blank">
+                <img
+                  src="./assets/aws-certified-cloud-practitioner.png"
+                  alt="Certification 1"
+                  class="icon img-large"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </select>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="nicolas:nicolasguarin1997@gmail.com">nicolasguarin1997@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nicol%C3%A1s-guar%C3%ADn-gaviria-08a4091a1/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nicolas Guarin Gaviria. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
