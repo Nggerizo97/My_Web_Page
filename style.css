@@ -154,6 +154,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  margin-bottom: 2rem;
 }
 
 .section-container {
