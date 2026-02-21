@@ -1,460 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nicolas Guarin Gaviria Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Nicolas Guarin Gaviria</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Nicolas Guarin Gaviria</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Nicolas Guarin Gaviria profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Nicolas Guarin Gaviria</h1>
-        <p class="section__text__p2">Software Engineer and AI Support</p> <!-- Consider updating this title based on your latest roles -->
-        <div class="btn-container">
-          <!-- CV Link Changed to <a> tag -->
-          <a
-            href="./assets/resume-example.pdf"
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="btn btn-color-2"
-          >
-            Download CV
-          </a>
-          <!-- Contact Info button changed to <a> tag -->
-          <a href="./#contact" class="btn btn-color-1">
-            Contact Info
-          </a>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/nicolas-guarin-gaviria-08a4091a1'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Nggerizo97'"
-          />
-          <img
-            src="./assets/instagram.png"
-            alt="My Instagram profile"
-            class="icon"
-            onclick="location.href='https://www.instagram.com/erizongg97?igsh=bzRuYXZ4em9kemo0'"
-          />
-          <img
-            src="./assets/youtube.png"
-            alt="My YouTube profile" 
-            class="icon"
-            onclick="location.href='https://www.youtube.com/@ggnicolas123'" 
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <!-- Experience Years Updated -->
-              <p>Nearly 3 years <br />Software & Data Engineering</p>
-              <p>Nearly 1 year <br />Data Analysis</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Mechatronic Engineer Bachelors Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <!-- Narrative Text Updated -->
-            <p>Hello! I'm Nicolas Guarin Gaviria, a Mechatronics Engineer with nearly 3 years of dynamic 
-            experience in software development, data engineering, and analytics. My recent roles include a 
-            Full Stack Software Engineer Associate position at <strong>Scotiabank</strong>, 
-            where I leverage Python, Azure, and Power BI to build comprehensive solutions. 
-            I also contributed as a Supply Data Analyst at <strong>ISA Interconexión Eléctrica S.A. E.S.P.</strong>, 
-            developing predictive models and data pipelines using Azure Databricks, Azure Machine Learning, 
-            and Azure DevOps. My foundational experience at <strong>Bancolombia</strong> involved roles as a 
-            Software Engineer, focusing on AI support and microservices, and as an Analyst, driving data-driven 
-            insights. I'm passionate about leveraging technology to solve complex problems and continuously 
-            learn to stay ahead in the industry.</p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Technology Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container"> 
-            <h2 class="experience-sub-title">Business Analyst / Data Analysis & BI</h2> 
-            <div class="article-container">
-              <article>
-                <figure class="details-container"> 
-                  <img
-                    src="./assets/powerbi.jpg"
-                    alt="Power BI icon"  
-                    class="icon icon-large"
-                  />
-                  <figcaption>Power BI</figcaption>
-                </figure>
-              </article>
-              <article>
-                <figure class="details-container">
-                  <img
-                    src="./assets/sql.png"
-                    alt="SQL icon"
-                    class="icon icon-large"
-                  />
-                  <figcaption>SQL</figcaption>
-                </figure>
-              </article>
-              <article>
-                <figure class="details-container">
-                  <img
-                    src="./assets/excel.png"
-                    alt="Excel icon"
-                    class="icon icon-large"
-                  />
-                  <figcaption>Excel</figcaption>
-                </figure>
-              </article>
-              <article>
-                <figure class="details-container">
-                  <img
-                    src="./assets/python.png"
-                    alt="Python icon"
-                    class="icon icon-large"
-                  />
-                  <figcaption>Python</figcaption>
-                </figure>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Engineer / Data Engineering</h2> 
-            <div class="article-container">
-              <article>
-                <figure class="details-container">
-                  <img
-                    src="./assets/python.png"
-                    alt="Python icon"
-                    class="icon icon-large"
-                  />
-                  <figcaption>Python</figcaption>
-                </figure>  
-              </article>
-              <article>
-                <figure class="details-container">
-                  <img
-                    src="./assets/aws.png"
-                    alt="AWS icon"
-                    class="icon icon-large"
-                  />
-                  <figcaption>AWS</figcaption>
-                </figure>
-              </article>
-              <article>
-                <figure class="details-container">
-                  <img
-                    src="./assets/devops.png"
-                    alt="DevOps icon"
-                    class="icon icon-large"
-                  />
-                  <figcaption>DevOps</figcaption>
-                </figure>
-              </article>
-              <article>
-                <figure class="details-container">
-                  <img
-                    src="./assets/github.png"
-                    alt="Git icon" 
-                    class="icon icon-large"
-                  />
-                  <figcaption>Git</figcaption>
-                </figure>
-              </article>
-              <article>
-                <figure class="details-container">
-                  <img src="./assets/azure.jpeg" alt="Microsoft Azure icon" class="icon icon-large" />
-                  <figcaption>Azure</figcaption>
-                </figure>
-              </article>
-              <article>
-                <figure class="details-container">
-                  <img src="./assets/Databricks.png" alt="Databricks icon" class="icon icon-large" />
-                  <figcaption>Databricks</figcaption>
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/algoritmogenetico2.gif"
-                alt="Neural Network from Scratch Project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Neural Network: Equation Approximation</h2>
-            <div class="text-container" style="text-align: left; padding: 0 1em 1em 1em; height: 120px; overflow-y: auto;">
-              <p style="font-size: 0.9rem;">
-                Implemented a neural network manually to approximate an arithmetic equation's graph. Focused on fundamental principles, iterative training, and weight adjustment, with plans for advanced optimization and complexity.
-              </p>
-            </div>
-            <div class="btn-container">
-              <a
-                href="https://github.com/Nggerizo97/neuronal-network-matlab-work"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-color-2 project-btn"
-              >
-                Github
-              </a>
-            </div>
-          </div>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Paginaecommers.gif"
-                alt="E-Commerce Photography Platform Project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">E-Commerce Photography Platform</h2>
-            <div class="text-container" style="text-align: left; padding: 0 1em 1em 1em; height: 120px; overflow-y: auto;">
-              <p style="font-size: 0.9rem;">
-                Developed a platform for selling photographs using Node.js (JWT for sessions) and Angular. Future plans include data analytics for market insights and potential AWS migration for scalability.
-              </p>
-            </div>
-            <div class="btn-container">
-              <a
-                href="https://github.com/Nggerizo97/MyFirstWebAppImage"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-color-2 project-btn"
-              >
-                Github
-              </a>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Guarin Gaviria | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/chatbot-data.gif"
-                alt="Chat Data Analysis for Power BI Project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Chat Data Analysis for Power BI</h2>
-            <div class="text-container" style="text-align: left; padding: 0 1em 1em 1em; height: 120px; overflow-y: auto;">
-              <p style="font-size: 0.9rem;">
-                Analyzed JSON chat data by applying filters to extract relevant fields, compiling them into Excel for generating comprehensive Power BI reports. Focus on non-sensitive, randomly selected conversations.
-              </p>
-            </div>
-            <div class="btn-container">
-              <a
-                href="https://github.com/Nggerizo97/Chat_analyst"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-color-2 project-btn"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img 
-                src="./assets/perabank.gif" 
-                alt="Predictive Risk Modeling with AWS at PeraBank" 
-                class="project-img" 
-                onerror="this.src='https://placehold.co/600x400/EEE/31343C?text=Project+Image';"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Predictive Analytics & ETL with AWS</h2> 
-            <div class="text-container" style="text-align: left; padding: 0 1em 1em 1em; height: 120px; overflow-y: auto;">
-              <p style="font-size: 0.9rem;">
-                Developed predictive risk models at PeraBank using AWS services, including ETL processes for large datasets. This project involved analyzing customer data to predict loan default risk, leveraging tools like Sagemaker and S3.
-              </p>
-            </div>
-            <div class="btn-container">
-              <a 
-                href="https://github.com/Nggerizo97/Perabank" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="btn btn-color-2 project-btn"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-        </div> 
-      </div> 
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#certifications'"
-      />
-    </section>
-    <section id="certifications">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Certifications</h1>
-      <div class="experience-details-container">
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">NG</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">NG</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container reveal">
+      <img src="./assets/profile-pic.png" alt="Nicolas Guarin Gaviria" />
+    </div>
+    <div class="section__text reveal">
+      <p class="section__text__p1">Software Engineer & AI Specialist</p>
+      <h1 class="title">Nicolas Guarin Gaviria</h1>
+      <p class="section__text__p2">Innovation through Code & Data</p>
+      <div class="btn-container">
+        <a href="./assets/resume-example.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-color-1">
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn-color-2">
+          Contact Info
+        </a>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+          onclick="window.open('https://linkedin.com/in/nicolas-guarin-gaviria-08a4091a1', '_blank')" />
+        <img src="./assets/github.png" alt="Github" class="icon"
+          onclick="window.open('https://github.com/Nggerizo97', '_blank')" />
+        <img src="./assets/instagram.png" alt="Instagram" class="icon"
+          onclick="window.open('https://www.instagram.com/erizongg97', '_blank')" />
+        <img src="./assets/youtube.png" alt="YouTube" class="icon"
+          onclick="window.open('https://www.youtube.com/@ggnicolas123', '_blank')" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="subtitle reveal">Discovery</p>
+    <h2 class="section-title reveal">About Me</h2>
+    <div class="section-container">
+      <div class="about-details-container">
         <div class="about-containers">
+          <div class="details-container reveal">
+            <img src="./assets/experience.png" alt="Experience" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ Years<br />Software & Data Engineering</p>
+          </div>
+          <div class="details-container reveal">
+            <img src="./assets/education.png" alt="Education" class="icon" />
+            <h3>Education</h3>
+            <p>Mechatronic Engineer<br />Bachelors Degree</p>
+          </div>
+        </div>
+        <div class="text-container reveal">
+          <p>
+            I am a <strong>Mechatronics Engineer</strong> with a strong foundation in programming, specialized in
+            crafting smart, scalable, and high-impact solutions that bridge the gap between code and real-world
+            applications.
+          </p>
+          <br>
+          <p>
+            Currently, as a <strong>Full Stack Software Engineer at Scotiabank</strong>, I architect robust Azure-based
+            solutions and design end-to-end applications. My background includes leading predictive modeling initiatives
+            at <strong>ISA</strong> and engineering cloud microservices at <strong>Bancolombia</strong>. I am passionate
+            about integrating Industry 4.0 technologies into modern workflows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <p class="subtitle reveal">Expertise</p>
+    <h2 class="section-title reveal">Tech Stack</h2>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container reveal">
+          <h2 class="experience-sub-title">Data & BI</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/powerbi.jpg" alt="Power BI" class="icon icon-large" />
+              <figcaption>Power BI</figcaption>
+            </article>
+            <article>
+              <img src="./assets/sql.png" alt="SQL" class="icon icon-large" />
+              <figcaption>SQL</figcaption>
+            </article>
+            <article>
+              <img src="./assets/python.png" alt="Python" class="icon icon-large" />
+              <figcaption>Python</figcaption>
+            </article>
+          </div>
+        </div>
+        <div class="details-container reveal">
+          <h2 class="experience-sub-title">Core Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/azure.jpeg" alt="Azure" class="icon icon-large" />
+              <figcaption>Azure</figcaption>
+            </article>
+            <article>
+              <img src="./assets/Databricks.png" alt="Databricks" class="icon icon-large" />
+              <figcaption>Databricks</figcaption>
+            </article>
+            <article>
+              <img src="./assets/github.png" alt="Git" class="icon icon-large" />
+              <figcaption>Git</figcaption>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="subtitle reveal">Portfolio</p>
+    <h2 class="section-title reveal">Recent Projects</h2>
+    <div class="carousel-container reveal">
+      <button class="arrow-btn prev" onclick="moveSlider(-1)">&#8249;</button>
+      <div class="carousel-viewport">
+        <div class="carousel-wrapper" id="project-slider">
           <div class="details-container color-container">
-            <div class="article-container">
-              <a href="https://www.credly.com/badges/aefdb276-9ab0-4b99-ae52-4f3828dce5f1/public_url" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./assets/programa-cientifico-de-datos-nivel-basico.1.png"
-                  alt="Data Science Program - Basic Level Certification"
-                  class="icon img-large"
-                />
-              </a>
-              <a href="https://www.credly.com/badges/6fffafc8-63ab-4422-ad76-c64900cbb476/public_url" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./assets/applied-data-science-with-python-level-2.png"
-                  alt="Applied Data Science with Python Level 2 Certification"
-                  class="icon img-large"
-                />
-              </a>
-              <a href="https://www.credly.com/badges/f91e63e9-820e-4f56-878c-3142232eec06/linked_in?t=rkikvm" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./assets/aws-certified-cloud-practitioner.png"
-                  alt="AWS Certified Cloud Practitioner Certification"
-                  class="icon img-large"
-                />
-              </a>
+            <img src="./assets/algoritmogenetico2.gif" alt="Neural Networks" class="project-img" />
+            <h3 class="project-title">Neural Network: Equation Match</h3>
+            <p>Manual implementation focusing on fundamental AI weight adjustment principles.</p>
+            <div class="btn-container">
+              <a href="https://github.com/Nggerizo97/neuronal-network-matlab-work" target="_blank"
+                class="btn btn-color-2">Github</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <img src="./assets/Paginaecommers.gif" alt="E-Commerce" class="project-img" />
+            <h3 class="project-title">Photo E-Commerce Platform</h3>
+            <p>Built with Node.js and Angular featuring JWT sessions for secure transactions.</p>
+            <div class="btn-container">
+              <a href="https://github.com/Nggerizo97/MyFirstWebAppImage" target="_blank"
+                class="btn btn-color-2">Github</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <img src="./assets/perabank.gif" alt="Predictive Risk" class="project-img"
+              onerror="this.src='./assets/fallback.png'" />
+            <h3 class="project-title">AWS Risk Analytics</h3>
+            <p>Predictive risk models at PeraBank using AWS Sagemaker and ETL pipelines.</p>
+            <div class="btn-container">
+              <a href="https://github.com/Nggerizo97/Perabank" target="_blank" class="btn btn-color-2">Github</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <img src="./assets/b3dt-preview.gif" alt="B3DT E-commerce" class="project-img"
+              onerror="this.src='./assets/fallback.png'" />
+            <h3 class="project-title">B3DT — 3D Articulated Figures</h3>
+            <p>Premium e-commerce with AI assistant (Bex), Docker-ready and bilingual (ES/EN).</p>
+            <div class="btn-container">
+              <a href="https://github.com/Nggerizo97/B3DT" target="_blank" class="btn btn-color-2">Github</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <img src="./assets/car-assistant-preview.gif" alt="Car Assistant" class="project-img"
+              onerror="this.src='./assets/fallback.png'" />
+            <h3 class="project-title">Car Assistant Buyer</h3>
+            <p>Python scraper using Playwright and Streamlit for multi-brand car data analysis.</p>
+            <div class="btn-container">
+              <a href="https://github.com/Nggerizo97/Car_Assistant_Buyer" target="_blank"
+                class="btn btn-color-2">Github</a>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section> 
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:nicolasguarin1997@gmail.com">nicolasguarin1997@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://linkedin.com/in/nicolas-guarin-gaviria-08a4091a1" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-        </div>
+      <button class="arrow-btn next" onclick="moveSlider(1)">&#8250;</button>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <p class="subtitle reveal">Recognition</p>
+    <h2 class="section-title reveal">Certifications</h2>
+    <div class="experience-details-container">
+      <div class="article-container reveal">
+        <a href="https://www.credly.com/badges/aefdb276-9ab0-4b99-ae52-4f3828dce5f1/public_url" target="_blank">
+          <img src="./assets/programa-cientifico-de-datos-nivel-basico.1.png" alt="Data Science" class="img-large" />
+        </a>
+        <a href="https://www.credly.com/badges/6fffafc8-63ab-4422-ad76-c64900cbb476/public_url" target="_blank">
+          <img src="./assets/applied-data-science-with-python-level-2.png" alt="Applied Data Science"
+            class="img-large" />
+        </a>
+        <a href="https://www.credly.com/badges/f91e63e9-820e-4f56-878c-3142232eec06" target="_blank">
+          <img src="./assets/aws-certified-cloud-practitioner.png" alt="AWS Practitioner" class="img-large" />
+        </a>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright © 2025 Nicolas Guarin Gaviria. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <section id="photography">
+    <p class="subtitle reveal">Creative Side</p>
+    <h2 class="section-title reveal">Capturing Moments</h2>
+    <div class="gallery-container reveal">
+      <div class="gallery-item">
+        <img src="./assets/imagen1.jpg" alt="Photography 1" onerror="this.src='./assets/fallback.png'" />
+      </div>
+      <div class="gallery-item">
+        <img src="./assets/imagen2.jpg" alt="Photography 2" onerror="this.src='./assets/fallback.png'" />
+      </div>
+      <div class="gallery-item">
+        <img src="./assets/imagen3.jpg" alt="Photography 3" onerror="this.src='./assets/fallback.png'" />
+      </div>
+      <div class="gallery-item">
+        <img src="./assets/imagen4.jpg" alt="Photography 4" onerror="this.src='./assets/fallback.png'" />
+      </div>
+      <div class="gallery-item">
+        <img src="./assets/imagen5.jpg" alt="Photography 5" onerror="this.src='./assets/fallback.png'" />
+      </div>
+      <div class="gallery-item">
+        <img src="./assets/imagen6.jpg" alt="Photography 6" onerror="this.src='./assets/fallback.png'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="subtitle reveal">Connect</p>
+    <h2 class="section-title reveal">Get In Touch</h2>
+    <div class="contact-info-upper-container reveal">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email" class="icon" />
+        <p><a href="mailto:nicolasguarin1997@gmail.com">nicolasguarin1997@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+        <p><a href="https://linkedin.com/in/nicolas-guarin-gaviria-08a4091a1" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#photography">Photography</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>Copyright &copy; 2025 Nicolas Guarin Gaviria.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
