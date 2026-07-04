@@ -504,7 +504,7 @@ article figcaption {
 
 .carousel-viewport {
   overflow: hidden;
-  width: 100%;
+  flex: 1;
   padding: 1rem 0;
 }
 
